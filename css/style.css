@@ -3,6 +3,8 @@
 }
 img {
     display: flex;
+    width: 100px;
+    height: 100px;
 }
 #logout-form {
     padding-bottom: 2%;
