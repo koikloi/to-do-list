@@ -4,3 +4,9 @@
 img {
     display: flex;
 }
+#logout-form {
+    padding-bottom: 2%;
+}
+#login-form {
+    padding-bottom: 2%;
+}
