@@ -4,7 +4,7 @@ const week = document.getElementById("week")
 // 요일을 배열로 만들고 getDay()로 받은 값을 요일로 변경 후 출력 //
 function getWeek() {
     const days = new Date();
-    const month = days.getMonth();
+    const month = (days.getMonth()+1);
     const date = days.getDate();
     const day = days.getDay()
 
@@ -18,7 +18,7 @@ function getWeek() {
     weekday[6] = "토"
     const resultDay = weekday[day];
     
-    week.innerText = `${month}월, ${date}일, ${resultDay}요일`;
+    week.innerText = `${month}월 ${date}일 ${resultDay}요일`;
 }
 
 getWeek();
