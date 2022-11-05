@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <title>Momentum App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Poor+Story&display=swap" rel="stylesheet">
+    <title>Momentum</title>
 </head>
 
 <body>
     <form class="hidden" id="login-form">
-        <input required maxlength="10" type="text" placeholder="What is your name?" />
-        <input type="submit" value="Log In" />
+        <input class="login-form-input" required maxlength="10" type="text" placeholder="What is your name?" />
     </form>
-
-        <h1 id="greeting" class="hidden"></h1>
+    <h1 id="greeting" class="hidden"></h1>
     <form class="hidden" id="logout-form">
-        <input type="button" value="Logout">
+        <input type="image" src="img/logout.png">
     </form>
-
+        <img class="fakebutton" src="img/logout.png">
+    <div id="todo">
     <form id="todo-form">
-        <input type="text" placeholder="Write a To do and Press Enter" required/>
+        <input type="text" placeholder="Write To do and Press Enter" required/>
     </form>
-
-    <ul id="todo-list"></ul>
-
-    <h2 id="clock"></h2>
-
-    <div id="quote" >
-        <span></span>
-        <div></div>
-        <span></span>
+        <ul id="todo-list"></ul>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
+    <div class="clockposition">
+        <h2 id="clock"></h2>
     </div>
-    <div class="tabemono">
-        <div class="tabemono_box"></div>
+    <div>
+        <h1 id="week"></h1>
+    </div>
+    <div id="quote">
+        <span class="sentence"></span>
+            <div></div>
+        <span class="Philosopher"></span>
+    </div>
+        <div id="weather">
+            <span style="font-family: 'Black Han Sans', sans-serif;"></span>
+            <span style="font-family: 'Black Han Sans', sans-serif;"></span>
     </div>
 
     <script src="js/clock..js"></script>
@@ -46,5 +46,6 @@
     <script src="js/img.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/week.js"></script>
 </body>
 </html>

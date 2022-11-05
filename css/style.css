@@ -1,20 +1,145 @@
+* {
+    font-family: 'Poor Story', cursive;
+    width:auto;
+    color: rgb(70, 66, 66);
+}
+
+body {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
 .hidden {
     display: none;
 }
+
 img {
-    position:absolute;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 0px;
+    position: absolute;
+    flex-direction: row;
+    width:95%;
+    height:95%;
+    left: 110px;
+    top: 25px;
     right:0px;
     bottom:0px;
     z-index: -1;
-    opacity:70%;
+    opacity: 65%;
     }
-#logout-form {
-    padding-bottom: 2%;
+
+.login-form-input {
+    position: absolute;
+    top: 45.8vh;
+    left: 86vh;
+    width: 26vh;
+    height: 4vh;
+    font-size: 21px;
+    opacity: 50%;
+    border: 3px solid black;
 }
-#login-form {
-    padding-bottom: 2%;
+
+.login-form-input:hover {
+    background-color: rgb(153, 153, 211);
+}
+
+.login-form-input:focus {
+    background-color: rgb(34, 34, 228);
+}
+#greeting {
+    position: absolute;
+    width: fit-content;
+    top: 44vh;
+    left: 87vh;
+    font-size: 40px;
+}
+
+#logout-form {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 79.5vh;
+    left: 172vh;
+    opacity: 90%;
+}
+
+.fakebutton {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 79.5vh;
+    left: 172vh;
+    opacity: 30%;
+}
+
+#quote {
+    display: flexbox;
+    width: 32%;
+}
+.sentence {
+    position: absolute;
+    font-family: 'Nanum Brush Script', cursive;
+    display: block;
+    width: 65vh;
+    font-size: 30px;
+    left: 115vh;
+    top: 39vh;
+}
+
+.Philosopher {
+    position: absolute;
+    font-family: 'Nanum Brush Script', cursive;
+    display: block;
+    font-size: 24px;
+    left: 125vh;
+    top: 44.7vh;
+}
+
+.clockposition {
+    flex: auto;
+    position: absolute;
+    font-size: 75px;
+    letter-spacing: 8px;
+    left: 143vh;
+    top: 42.5vh;
+}
+
+#weather {
+    font-family: 'Black Han Sans', sans-serif;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    left: 160.3vh;
+    top: 70vh;
+}
+
+#todo {
+    position: absolute;
+    top: 16vh;
+    left: 21vh;
+    font-size: 30px;
+
+}
+
+#todo-form input {
+    position: absolute;
+    height: 3.5vh;
+    width: 60vh;
+    font-size: 25px;
+}
+
+#week {
+    position: absolute;
+    font-size: 40px;
+    left: 149vh;
+    top: 59vh;
+    width: 300px;
+}
+#todo-list {
+    position: absolute;
+    margin-top: 6vh;
+    display: block;
+}
+
+#todo-list button {
+    position:absolute;
+    left: 57.5vh;
 }
