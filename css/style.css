@@ -147,3 +147,9 @@ img {
     position:absolute;
     left: 57.5vh;
 }
+
+.playMusic {
+    position:absolute;
+    top: 73vh;
+    left: 145vh;
+}
